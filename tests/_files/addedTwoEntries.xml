@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <gbentry fullName="Test User" emailAddress="test@example.com" 
+             website="http://www.example.com" comment="This is a first test" 
+             timestamp="2010-01-01 00:00:00"/>
+    <gbentry fullName="Obi Wan Kenobi" emailAddress="obi-wan@jedi-council.com" 
+             website="http://www.jedi-council.com" comment="May the phporce be with you" 
+             timestamp="2010-01-01 01:00:00"/>
+    <gbentry fullName="Test User" emailAddress="test@example.com" 
+             website="http://www.example.com" comment="This is a test" 
+             timestamp="2010-01-01 00:00:00"/>
+    <gbentry fullName="Test Manager" emailAddress="testmanager@example.com" 
+             website="http://tests.example.com" comment="This is another test" 
+             timestamp="2010-01-01 01:00:00"/>
+</dataset>

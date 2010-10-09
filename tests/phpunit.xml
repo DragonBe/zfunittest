@@ -1,0 +1,22 @@
+<phpunit bootstrap="./TestHelper.php" colors="true">
+    <!-- Version: $Id: phpunit.xml 298 2010-05-11 13:18:02Z michelangelo $ -->
+    <testsuite name="Zend Framework Unit Test Demo">
+        <directory>./</directory>
+    </testsuite>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">../library/</directory>
+            <directory suffix=".php">../application/</directory>
+            <exclude>
+                <directory suffix=".phtml">../application/</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+
+    <logging>
+        <log type="coverage-html" target="./log/report" charset="UTF-8" 
+         yui="true" highlight="true" lowUpperBound="50" highLowerBound="80"/>
+        <log type="testdox-html" target="./log/testdox.html" />
+    </logging>
+</phpunit>

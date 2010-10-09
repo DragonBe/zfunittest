@@ -1,0 +1,10 @@
+
+<!-- file: application/views/scripts/comment/send-comment.phtml -->
+<dl>
+<?php if (isset ($this->values['website'])): ?>
+<dt id="fullName"><a href="<?php echo $this->escape($this->values['website']) ?>"><?php echo $this->escape($this->values['fullName']) ?></a></dt>
+<?php else: ?>
+<dt id="fullName"><?php echo $this->escape($this->values['fullName']) ?></dt>
+<?php endif; ?>
+<dd id="comment"><?php echo $this->escape($this->values['comment']) ?></dd>
+</dl>
