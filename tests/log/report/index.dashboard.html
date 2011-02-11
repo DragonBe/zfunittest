@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--[if IE]><script src="excanvas.compressed.js"></script><![endif]-->
+    <script src="RGraph.common.core.js" ></script>
+    <script src="RGraph.common.tooltips.js" ></script>
+    <script src="RGraph.bar.js" ></script>
+    <script src="RGraph.scatter.js" ></script>
+  </head>
+
+  <body>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr><td class="title"></td></tr>
+      <tr><td><div align="center"><p><a href="index.html">Back to Code Coverage report</a></p></div></td></tr>
+      <tr><td class="ruler"><img src="glass.png" width="3" height="3" alt=""></td></tr>
+    </table>
+
+    <br />
+
+    <center>
+      <table width="90%" cellpadding="2" cellspacing="1" border="0">
+        <tr>
+          <td valign="top">
+            <h2>Class Coverage Distribution</h2>
+            <canvas id="classCoverageDistribution" width="475" height="200"></canvas>
+            <script>
+            var ccd = new RGraph.Bar('classCoverageDistribution', [2,0,1,0,0,0,1,0,1,1,0,3]);
+            ccd.Set('chart.background.barcolor1', 'white');
+            ccd.Set('chart.background.barcolor2', 'white');
+            ccd.Set('chart.colors', ['blue']);
+            ccd.Set('chart.shadow', true);
+            ccd.Set('chart.shadow.offsetx', 3);
+            ccd.Set('chart.shadow.offsety', 3);
+            ccd.Set('chart.labels', ['0%','0-10%','10-20%','20-30%','30-40%','40-50%','50-60%','60-70%','70-80%','80-90%','90-100%','100%']);
+            ccd.Set('chart.text.size', 5);
+            ccd.Draw();
+            </script>
+          </td>
+
+          <td valign="top">
+            <h2>Class Complexity</h2>
+            <canvas id="classComplexity" width="475" height="200"></canvas>
+            <script>
+            var cc = new RGraph.Scatter('classComplexity', [[86.95652173913,6,"blue","CommentController"],[0,2,"blue","ConnectController"],[0,8,"blue","ErrorController"],[15.384615384615,4,"blue","IndexController"],[100,1,"blue","Application_Form_Comment"],[100,0,"blue","Application_Model_DbTable_GuestbookEntry"],[100,5,"blue","Application_Model_Guestbook"],[77.049180327869,31,"blue","Application_Model_GuestbookEntry"],[58.620689655172,13,"blue","Application_Model_Mapper_GuestbookEntry"]]);
+            cc.Set('chart.xmax', 100);
+            cc.Set('chart.background.barcolor1', 'white');
+            cc.Set('chart.background.barcolor2', 'white');
+            cc.Set('chart.tickmarks', 'plus');
+            cc.Set('chart.ticksize', 5);
+            cc.Set('chart.text.size', 5);
+            cc.Set('chart.ylabels', false);
+            cc.Draw();
+            </script>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <h2>Top Project Risks</h2>
+            <ul>
+              <li><a href="controllers_ErrorController.php.html#3">ErrorController</a> (72)</li>
+              <li><a href="models_GuestbookEntry.php.html#2">Application_Model_GuestbookEntry</a> (42)</li>
+              <li><a href="models_mappers_GuestbookEntry.php.html#2">Application_Model_Mapper_GuestbookEntry</a> (24)</li>
+              <li><a href="controllers_CommentController.php.html#2">CommentController</a> (6)</li>
+
+            </ul>
+          </td>
+
+          <td valign="top">
+            <h2>Least Tested Methods</h2>
+            <ul>
+              <li><a href="models_GuestbookEntry.php.html#177">Application_Model_GuestbookEntry::__set</a> (0%)</li>
+              <li><a href="models_GuestbookEntry.php.html#190">Application_Model_GuestbookEntry::__get</a> (0%)</li>
+              <li><a href="models_GuestbookEntry.php.html#235">Application_Model_GuestbookEntry::fetchRow</a> (0%)</li>
+              <li><a href="models_mappers_GuestbookEntry.php.html#49">Application_Model_Mapper_GuestbookEntry::fetchRow</a> (0%)</li>
+              <li><a href="controllers_IndexController.php.html#17">IndexController::twitterAction</a> (0%)</li>
+              <li><a href="controllers_IndexController.php.html#47">IndexController::callbackAction</a> (0%)</li>
+              <li><a href="controllers_ConnectController.php.html#6">ConnectController::init</a> (0%)</li>
+              <li><a href="controllers_ErrorController.php.html#6">ErrorController::errorAction</a> (0%)</li>
+              <li><a href="controllers_ErrorController.php.html#39">ErrorController::getLog</a> (0%)</li>
+              <li><a href="controllers_ConnectController.php.html#11">ConnectController::indexAction</a> (0%)</li>
+
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </center>
+
+    <br />
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr><td class="ruler"><img src="glass.png" width="3" height="3" alt=""></td></tr>
+      <tr><td class="versionInfo">Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.0.3</a> using <a href="http://www.php.net/" target="_top">PHP 5.3.3</a> and PHPUnit 3.5.10 at Fri Feb 11 22:38:15 CET 2011.</td></tr>
+    </table>
+
+    <br/>
+  </body>
+</html>
