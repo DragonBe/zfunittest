@@ -15,7 +15,7 @@ class Application_Model_GuestbookEntryTest extends DatabaseTestCase
     }
     public function testEntryIsEmptyAtConstruct()
     {
-        $this->assertType('Application_Model_GuestbookEntry', $this->_gbEntry);
+        $this->assertInstanceOf('Application_Model_GuestbookEntry', $this->_gbEntry);
         $this->assertNull($this->_gbEntry->getFullName());
         $this->assertNull($this->_gbEntry->getEmailAddress());
         $this->assertNull($this->_gbEntry->getWebsite());
@@ -95,7 +95,7 @@ public function testNewEntryPopulatesDatabase()
     $ds = new Zend_Test_PHPUnit_Db_DataSet_QueryDataSet(
         $this->getConnection()
     );
-    $ds->addTable('gbentry', 'SELECT * FROM gbentry');
+    $ds->addTable('gbentry', 'SELECT fullName, emailAddress, website, comment, timestamp FROM gbentry');
     $dataSet = $this->createFlatXmlDataSet(
             TEST_PATH . "/_files/addedTwoEntries.xml");
     $filteredDataSet = new PHPUnit_Extensions_Database_DataSet_DataSetFilter(

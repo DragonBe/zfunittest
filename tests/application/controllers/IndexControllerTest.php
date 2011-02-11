@@ -17,6 +17,5 @@ class IndexControllerTest extends ControllerTestCase
         $this->assertModule('default');
         $this->assertController('index');
         $this->assertAction('index');
-        $this->assertResponseCode(200);
     }
 }

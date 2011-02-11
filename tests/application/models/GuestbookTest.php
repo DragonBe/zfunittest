@@ -16,7 +16,7 @@ class Application_Model_GuestbookTest extends PHPUnit_Framework_TestCase
     }
     public function testGuestBookIsEmptyAtConstruct()
     {
-        $this->assertType('Application_Model_GuestBook', $this->_gb);
+        $this->assertInstanceOf('Application_Model_GuestBook', $this->_gb);
         $this->assertFalse($this->_gb->hasEntries());
         $this->assertSame(0, count($this->_gb->getEntries()));
         $this->assertSame(0, count($this->_gb));
