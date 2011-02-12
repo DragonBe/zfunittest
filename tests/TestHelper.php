@@ -1,7 +1,4 @@
 <?php
-// start output buffering
-ob_start();
-
 // set our app paths and environments
 define('BASE_PATH', realpath(dirname(__FILE__) . '/../'));
 define('APPLICATION_PATH', BASE_PATH . '/application');
