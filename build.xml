@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Zend Framework Unit Test Demo" default="build">
+
+<target name="phpdoc">
+	<phpdoc 
+	   title="ZFUnittest API Documentation"
+	   destdir="./docs/api"
+	   sourcecode="true"
+	   defaultcategoryname="ZFUnittest"
+	   defaultpackagename="My"
+	   output="HTML:frames:earthli">
+		<fileset dir="./library/My">
+		    <include name="**/*.php" />
+		</fileset>
+		<projdocfileset dir=".">
+			<include name="README" />
+			<include name="INSTALL" />
+			<include name="CHANGELOG" />
+		</projdocfileset>
+	</phpdoc>
+</target>
+
+	<target name="phpunit">
+	   <exec command="/usr/bin/phpunit" dir="./tests"/>
+	</target>
+	
+	<target name="build" depends="phpunit"/>
+</project>
