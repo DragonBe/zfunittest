@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>application/models</title>
+    <title>library/My</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <!--[if IE]><script src="excanvas.compressed.js"></script><![endif]-->
     <script src="RGraph.common.core.js" ></script>
@@ -13,8 +13,8 @@
 
   <body>
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td class="title">application/models</td></tr>
-      <tr><td><div align="center"><p><a href="application_models.html">Back to Code Coverage report</a></p></div></td></tr>
+      <tr><td class="title">library/My</td></tr>
+      <tr><td><div align="center"><p><a href="library_My.html">Back to Code Coverage report</a></p></div></td></tr>
       <tr><td class="ruler"><img src="glass.png" width="3" height="3" alt=""></td></tr>
     </table>
 
@@ -27,7 +27,7 @@
             <h2>Class Coverage Distribution</h2>
             <canvas id="classCoverageDistribution" width="475" height="200"></canvas>
             <script>
-            var ccd = new RGraph.Bar('classCoverageDistribution', [0,0,0,0,0,0,1,0,1,0,0,2]);
+            var ccd = new RGraph.Bar('classCoverageDistribution', [0,0,0,0,0,0,0,0,0,0,0,1]);
             ccd.Set('chart.background.barcolor1', 'white');
             ccd.Set('chart.background.barcolor2', 'white');
             ccd.Set('chart.colors', ['blue']);
@@ -44,7 +44,7 @@
             <h2>Class Complexity</h2>
             <canvas id="classComplexity" width="475" height="200"></canvas>
             <script>
-            var cc = new RGraph.Scatter('classComplexity', [[100,0,"blue","Application_Model_DbTable_GuestbookEntry"],[100,5,"blue","Application_Model_Guestbook"],[77.049180327869,31,"blue","Application_Model_GuestbookEntry"],[58.620689655172,13,"blue","Application_Model_Mapper_GuestbookEntry"]]);
+            var cc = new RGraph.Scatter('classComplexity', [[100,5,"blue","My_News_Feed"]]);
             cc.Set('chart.xmax', 100);
             cc.Set('chart.background.barcolor1', 'white');
             cc.Set('chart.background.barcolor2', 'white');
@@ -60,8 +60,6 @@
           <td valign="top">
             <h2>Top Project Risks</h2>
             <ul>
-              <li><a href="application_models_GuestbookEntry.php.html#2">Application_Model_GuestbookEntry</a> (42)</li>
-              <li><a href="application_models_mappers_GuestbookEntry.php.html#2">Application_Model_Mapper_GuestbookEntry</a> (24)</li>
 
             </ul>
           </td>
@@ -69,13 +67,6 @@
           <td valign="top">
             <h2>Least Tested Methods</h2>
             <ul>
-              <li><a href="application_models_mappers_GuestbookEntry.php.html#49">Application_Model_Mapper_GuestbookEntry::fetchRow</a> (0%)</li>
-              <li><a href="application_models_GuestbookEntry.php.html#177">Application_Model_GuestbookEntry::__set</a> (0%)</li>
-              <li><a href="application_models_GuestbookEntry.php.html#235">Application_Model_GuestbookEntry::fetchRow</a> (0%)</li>
-              <li><a href="application_models_GuestbookEntry.php.html#190">Application_Model_GuestbookEntry::__get</a> (0%)</li>
-              <li><a href="application_models_mappers_GuestbookEntry.php.html#66">Application_Model_Mapper_GuestbookEntry::save</a> (71%)</li>
-              <li><a href="application_models_mappers_GuestbookEntry.php.html#16">Application_Model_Mapper_GuestbookEntry::setDataSource</a> (77%)</li>
-              <li><a href="application_models_GuestbookEntry.php.html#206">Application_Model_GuestbookEntry::setMapper</a> (85%)</li>
 
             </ul>
           </td>

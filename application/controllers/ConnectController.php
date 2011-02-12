@@ -13,6 +13,14 @@ class ConnectController extends Zend_Controller_Action
         // action body
     }
 
+    public function newsAction()
+    {
+        $feed = new My_News_Feed('http://www.phpdeveloper.org/feed');
+        $this->view->feed = $feed->getNews();
+    }
+
 
 }
+
+
 

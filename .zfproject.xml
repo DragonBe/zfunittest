@@ -21,6 +21,7 @@
         </controllerFile>
         <controllerFile controllerName="Connect">
           <actionMethod actionName="index"/>
+          <actionMethod actionName="news"/>
         </controllerFile>
       </controllersDirectory>
       <formsDirectory>
@@ -54,6 +55,9 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Connect">
             <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Connect">
+            <viewScriptFile forActionName="news"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

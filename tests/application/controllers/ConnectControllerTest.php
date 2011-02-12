@@ -1,18 +1,12 @@
 <?php
-
-require_once 'PHPUnit/Framework/TestCase.php';
-
-class ConnectControllerTest extends PHPUnit_Framework_TestCase
+require_once TEST_PATH . '/ControllerTestCase.php';
+class ConnectControllerTest extends ControllerTestCase
 {
-
-    public function setUp()
+    public function testSiteCanFetchNewsFeeds()
     {
-        /* Setup Routine */
-    }
-
-    public function tearDown()
-    {
-        /* Tear Down Routine */
+        $this->dispatch('/connect/news');
+        $this->assertQuery('h2.newsFeedTitle');
+        $this->assertQueryCount('h2.newsFeedTitle', 10);        
     }
 
     public function testSiteCanConnectWithTwitter()

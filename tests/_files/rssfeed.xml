@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>Test RSS Feed</title>
+    <link>http://github.com/DragonBe/zfunittest</link>
+    <description>Example Unit Testing Zend Framework</description>
+    <language>en-us</language>
+    <pubDate>Sat, 12 Feb 2011 22:00:00 +0100</pubDate>
+    <ttl>30</ttl>
+    <item>
+      <title><![CDATA[Test article 1]]></title>
+      <guid>1</guid>
+      <link>http://github.com/DragonBe/zfunittest</link>
+      <description><![CDATA[This is test article 1]]></description>
+      <pubDate>Sat, 12 Feb 2011 22:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Test article 2]]></title>
+      <guid>2</guid>
+      <link>http://github.com/DragonBe/zfunittest</link>
+      <description><![CDATA[This is test article 2]]></description>
+      <pubDate>Sat, 12 Feb 2011 22:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Test article 3]]></title>
+      <guid>3</guid>
+      <link>http://github.com/DragonBe/zfunittest</link>
+      <description><![CDATA[This is test article 3]]></description>
+      <pubDate>Sat, 12 Feb 2011 22:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Test article 4]]></title>
+      <guid>4</guid>
+      <link>http://github.com/DragonBe/zfunittest</link>
+      <description><![CDATA[This is test article 4]]></description>
+      <pubDate>Sat, 12 Feb 2011 22:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Test article 5]]></title>
+      <guid>5</guid>
+      <link>http://github.com/DragonBe/zfunittest</link>
+      <description><![CDATA[This is test article 5]]></description>
+      <pubDate>Sat, 12 Feb 2011 22:00:00 +0100</pubDate>
+    </item>
+  </channel>
+</rss>

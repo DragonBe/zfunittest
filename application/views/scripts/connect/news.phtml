@@ -1,0 +1,11 @@
+<?php $this->headTitle('News provided by phpdeveloper.org')?>
+<h1>News provided by phpdeveloper.org</h1>
+
+<?php if (!empty ($this->feed)): ?>
+<?php foreach ($this->feed as $item): ?>
+<h2 class="newsFeedTitle"><a href="<?php echo $item->link() ?>"><?php echo $this->escape($item->title()) ?></a></h2>
+<?php echo $item->description() ?>
+<?php endforeach;?>
+<?php else: ?>
+<p>No news entries were retrieved from <a href="http://phpdeveloper.org">phpdeveloper.org</a>. Please try again later.</p>
+<?php endif; ?>
